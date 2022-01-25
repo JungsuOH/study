@@ -1,0 +1,14 @@
+#4번
+3개의 양의 정수를 입력받아 그 합이 짝수이면 가장 큰 수를 출력하고, 홀수이면 합을 출력하는 프로그램을 작성하시오
+
+def chek1():
+    a,b,c = map(int, input("3개의 양의 정수를 입력하세요, 공백으로 구분").split())
+    z = a+b+c
+    if z % 2 ==0:
+        ans = max(a,b,c)
+    else:
+        ans = z
+    return '결과는 ' + str(ans) + "입니다"
+
+print(chek1())
+
