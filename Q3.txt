@@ -1,0 +1,21 @@
+def trichck():
+    #
+    lines = map(int, input("삼각형 3변의 길이를 입력하세요, 공백으로 구분").split())
+    lines = list(lines)
+    lines.sort()
+    a = lines[0]
+    b = lines[1]
+    c = lines[2]
+    #입력받은 수를 리스트로 만들고 크기 순서대로 정렬하여 a,b,c에 할당함
+    if c >= a+b:
+        form = "삼각형 아님"
+    elif a==b==c:
+        form = "정삼각형"
+    elif a==b or b==c or a==c:
+        form = "이등변삼각형"
+    elif c**2 == a**2 + b**2:
+        form = "직각삼각형"
+    else:
+        form = "그냥 삼각형"
+    return str(form)+ "입니다."
+print(trichck())
