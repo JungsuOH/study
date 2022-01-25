@@ -1,0 +1,20 @@
+##1번
+
+TS = 10000
+
+SW = 30000
+
+def dp_store():
+    T_amount = int(input("티셔츠 구입수량?"))
+    SW_amount = int(input("스웨터 구입수량?"))
+    total = TS * T_amount + SW * SW_amount
+    if total <= 100000:
+        total = total*0.95
+    elif total > 100000:
+        total = total*0.85
+    total = str(int(total))
+    return "합계: " + total + "원 입니다"
+
+print(dp_store())
+
+
