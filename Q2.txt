@@ -1,0 +1,16 @@
+# #2번
+
+#두개의 양의 정수를 입력받고
+#큰 수를 찾고, 큰 수가 짝수인지 홀수인지 판별
+
+def chek():
+    A,B = map(int, input("두개의 양의 정수를 입력하세요").split())
+    ans1 = max(A,B)
+    if ans1 % 2 ==0:
+        ans2 = "짝수"
+    elif ans1 % 2 != 0:
+        ans2 = "홀수"
+    return str(ans1) +"이 큰 수이고," + str(ans2) + "이다"
+
+print(chek())
+
