@@ -1,1 +1,10 @@
 #문제 6번
+
+
+PW = list(input("비밀번호를 입력하세요"))
+if len(PW) >= 9:
+    print("safe password")
+elif 9 > len(PW) >=5:
+    print('normal password')
+else:
+    print('danger password')
