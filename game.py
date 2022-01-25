@@ -1,7 +1,7 @@
 import random
 
 # 수정하는 중
-
+# 수정하는거 확인?
 answer = random.randrange(1, 101)
 print(answer)
 
